@@ -10,6 +10,8 @@ class Auth:
                 node: str = None,
                 output: str = None) -> str:
         """
+        Query for account by address
+
         :param address: akash public wallet address
         :param height: Use a specific height to query state at (this can error if the node is pruning state)
         :param output: Output format (text|json) (default "text")
@@ -38,6 +40,8 @@ class Auth:
                node: str = None,
                output: str = None) -> str:
         """
+        Query the current auth parameters:
+
         :param height: Use a specific height to query state at (this can error if the node is pruning state)
         :param output: Output format (text|json) (default "text")
         :param node: <host>:<port> to Tendermint RPC interface for this chain (default "tcp://localhost:26657")

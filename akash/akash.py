@@ -28,6 +28,12 @@ class Akash:
             vesting_end_time: int = None,
             vesting_start_time: int = None) -> str:
         """
+            Add a genesis account to genesis.json.
+            The provided account must specify the account address or key name and a list of initial coins.
+            If a key name is given, the address will be looked up in the local Keybase.
+            The list of initial tokens must contain valid denominations.
+            Accounts may optionally be supplied with vesting parameters.
+
         :param address: akash public wallet address
         :param coin: List of initial coin, The list of initial tokens must contain valid denominations.
         :param home: The application home directory (default "/home/ericu/.akash")
@@ -65,6 +71,12 @@ class Akash:
 
     @staticmethod
     def collect_gentxs(home: str = None) -> str:
+        """
+        Collect genesis txs and output a genesis.json file
+
+        :param home: The application home directory (default "/home/ericu/.akash")
+        :return:
+        """
         flags = []
 
         flags.extend(["--home", home] if home else [])

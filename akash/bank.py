@@ -16,6 +16,8 @@ class Bank:
                  page: int = None,
                  page_key: str = None) -> str:
         """
+        Query the total balance of an account or of a specific denomination.
+
         :param address: akash public wallet address
         :param count_total: count total number of records in all balances to query for
         :param denom: The specific balance denomination to query for
@@ -57,6 +59,8 @@ class Bank:
                        output: str = None,
                        node: str = None) -> str:
         """
+        Query the client metadata for all the registered coin denominations
+
         :param denom: The specific denomination to query client metadata for
         :param height: Use a specific height to query state at (this can error if the node is pruning state)
         :param output: Output format (text|json) (default "text")
@@ -87,6 +91,8 @@ class Bank:
               output: str = None,
               node: str = None) -> str:
         """
+        Query total supply of coins that are held by accounts in the chain.
+
         :param denom: The specific denomination to query client metadata for
         :param height: Use a specific height to query state at (this can error if the node is pruning state)
         :param output: Output format (text|json) (default "text")
