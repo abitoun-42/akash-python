@@ -5,6 +5,7 @@ import subprocess
 from akash.deploy import Deploy
 from akash.tx import Tx
 from akash.query import Query
+from akash.debug import Debug
 
 
 @dataclass
@@ -12,6 +13,7 @@ class Akash:
     deploy = Deploy()  # handle deploy module of the CLI
     tx = Tx()  # handle tx module of the CLI
     query = Query()  # handle query module of the CLI
+    debug = Debug()  # handle debug module of the CLI
 
     @staticmethod
     def add_genesis_account(
