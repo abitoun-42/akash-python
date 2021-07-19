@@ -4,7 +4,7 @@ setup(
     name='akash-python',
     version='0.1.0',
     description='A wrapper around the CLI interface for Akash Network',
-    url='',
+    url='https://github.com/abitoun-42/akash-python/tree/master/akash',
     author='Alexandre Bitoun',
     author_email='alexandre.bitoun@outlook.fr',
     license='GNU',
