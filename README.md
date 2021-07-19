@@ -4,7 +4,7 @@
 - You need to install the Akash CLI tools. refers to this tutorial 
     https://docs.akash.network/guides/deploy#part-1-install-akash
 
-### 2 - Install the package.
+### 2 - Install the package. ⚠️ Not added Yet ⚠️
 ```
 pip install akash-python
 ```
